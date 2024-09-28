@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Brand Salt - Your Branding Agency">
+    <meta name="description" content="The Brand Salt - Creative Branding Agency">
     <title>The Brand Salt</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Navigation -->
     <header>
         <div class="container">
-            <h1>The Brand Salt</h1>
+            <h1 class="logo">The Brand Salt</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -27,32 +28,36 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-content">
-            <h2>We Create Brands That Matter</h2>
-            <p>At The Brand Salt, we help you build a strong brand presence through creative solutions.</p>
-            <a href="#services" class="btn">Explore Services</a>
+            <h2>Innovative Branding Solutions</h2>
+            <p>We craft visually stunning and impactful brand experiences to help your business grow.</p>
+            <a href="#services" class="btn hero-btn">Discover More</a>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service">
+            <h2>Our Expertise</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="strategy-icon.svg" alt="Brand Strategy">
                     <h3>Brand Strategy</h3>
-                    <p>We create comprehensive strategies to position your brand uniquely in the market.</p>
+                    <p>We create a powerful roadmap for building and enhancing your brand.</p>
                 </div>
-                <div class="service">
-                    <h3>Logo & Identity</h3>
-                    <p>From logos to brand identity, we design visuals that represent your business.</p>
+                <div class="service-card">
+                    <img src="design-icon.svg" alt="Creative Design">
+                    <h3>Creative Design</h3>
+                    <p>From logos to packaging, we design every aspect of your brand's visual identity.</p>
                 </div>
-                <div class="service">
-                    <h3>Web Design</h3>
-                    <p>Our creative web design services ensure your brand shines online.</p>
+                <div class="service-card">
+                    <img src="web-icon.svg" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>We create modern, responsive websites that make your brand stand out online.</p>
                 </div>
-                <div class="service">
-                    <h3>Marketing</h3>
-                    <p>We offer full-scale digital marketing solutions to grow your brand.</p>
+                <div class="service-card">
+                    <img src="marketing-icon.svg" alt="Digital Marketing">
+                    <h3>Digital Marketing</h3>
+                    <p>Our targeted marketing strategies increase your brand visibility and engagement.</p>
                 </div>
             </div>
         </div>
@@ -61,19 +66,25 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio-section">
         <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="portfolio-grid">
+            <h2>Our Work</h2>
+            <div class="portfolio-gallery">
                 <div class="portfolio-item">
                     <img src="portfolio1.jpg" alt="Project 1">
-                    <h3>Project Name 1</h3>
+                    <div class="overlay">
+                        <h3>Project Name 1</h3>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="portfolio2.jpg" alt="Project 2">
-                    <h3>Project Name 2</h3>
+                    <div class="overlay">
+                        <h3>Project Name 2</h3>
+                    </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="portfolio3.jpg" alt="Project 3">
-                    <h3>Project Name 3</h3>
+                    <div class="overlay">
+                        <h3>Project Name 3</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,8 +93,8 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch to discuss how we can help grow your brand.</p>
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you. Whether you have a project in mind or just want to say hello, reach out to us!</p>
             <form action="mailto:youremail@domain.com" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
