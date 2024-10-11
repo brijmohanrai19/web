@@ -7,6 +7,145 @@
     <title>The Brand Salt</title>
     <link rel="stylesheet" href="css/styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Services Section */
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-card {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            flex-basis: 30%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Fixing the fifth card alignment */
+        .service-card:nth-child(5) {
+            flex-basis: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .service-card:nth-child(5) {
+                flex-basis: 30%;
+            }
+        }
+
+        /* Meet the Team Section */
+        .team-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        /* How We Work Section */
+        .work-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .work-values {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .work-value {
+            flex-basis: 30%;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .work-value h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .work-value p {
+            font-size: 1em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -99,7 +238,6 @@
         <div class="container">
             <h2>Our Work</h2>
             <div class="portfolio-gallery">
-                <!-- Replace with actual images and links -->
                 <div class="portfolio-item">
                     <a href="#">
                         <img src="img/portfolio1.jpg" alt="Project 1">
@@ -134,70 +272,62 @@
             <h2>About Us</h2>
             <p class="intro">Welcome to <strong>The Brand Salt</strong> - the essential ingredient for branding!</p>
             <p class="motto">We create <strong>Authentic Branding</strong> experiences that go beyond trends and aesthetics.</p>
-            <p>
-                At <strong>The Brand Salt</strong>, we focus on curating your brand’s true essence, building a long-lasting identity rather than fleeting virality.
-            </p>
-            <p>
-                Our creative team of branding experts brings diverse skills to the table, maximizing your brand's potential.
-            </p>
-            <p>
-                We're not just a promise; we are the one <strong>salt</strong> that flavors all your branding needs.
-            </p>
-            <p class="cta">Let's cook something extraordinary together. <a href="#contact">Contact us now!</a></p>
+            <p>At <strong>The Brand Salt</strong>, we focus on curating a brand’s true self, rather than following trends. With a creative team of brand specialists, we are focused on maximizing the brand's potential, bringing out the essence that makes it truly stand out.</p>
         </div>
     </section>
-
-    <!-- Meet the Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2>Meet the Team</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="img/team-member1.jpg" alt="Ankit Kumar Jha">
-                    <h3>Ankit Kumar Jha</h3>
-                </div>
-                <div class="team-member">
-                    <img src="img/team-member2.jpg" alt="Ananya K.">
-                    <h3>Ananya K.</h3>
-                </div>
-                <div class="team-member">
-                    <img src="img/team-member3.jpg" alt="Priyamvada S.">
-                    <h3>Priyamvada S.</h3>
-                </div>
-                <div class="team-member">
-                    <img src="img/team-member4.jpg" alt="Brijmohan Rai">
-                    <h3>Brijmohan Rai</h3>
-                </div>
-                <div class="team-member">
-                    <img src="img/team-member5.jpg" alt="Shreya Londhe">
-                    <h3>Shreya Londhe</h3>
-                </div>
+<!-- Meet the Team Section -->
+<section id="team" class="team-section">
+    <div class="container">
+        <h2>Meet the Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="img/team1.jpg" alt="Team Member 1">
+                <h3>Brijmohan Rai</h3>
+                <p>Operations Head</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team2.jpg" alt="Team Member 2">
+                <h3>Ankit Kumar Jha</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team3.jpg" alt="Team Member 3">
+                <h3>Ananya K.</h3>
+                <p>Marketing Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team4.jpg" alt="Team Member 4">
+                <h3>Priyamvada S.</h3>
+                <p>Lead Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team5.jpg" alt="Team Member 5">
+                <h3>Shreya Londhe</h3>
+                <p>Content Strategist</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- How We Work Section -->
-    <section class="work-section">
-        <div class="container">
-            <h2>The Way We Work</h2>
-            <div class="work-values">
-                <div class="work-value">
-                    <h3>Company. PARTNER.</h3>
-                    <p>We aim to be more than just a company; we are your partner in branding. We support your vision and guide you through the process, ensuring a positive and successful experience.</p>
-                </div>
-                <div class="work-value">
-                    <h3>AUTHENTICALLY TRANSPARENT.</h3>
-                    <p>Transparency is at the heart of our values. We openly share insights, metrics, reviews, and future developments with you. We appreciate the same level of transparency from you as well.</p>
-                </div>
-                <div class="work-value">
-                    <h3>RESEARCH GEEKS.</h3>
-                    <p>Our team is deeply immersed in the platforms we work with and is well-versed in their workings and algorithms. We are dedicated to researching and delivering the best solutions for your needs.</p>
-                </div>
+<section id="work" class="work-section">
+    <div class="container">
+        <h2>The Way We Work</h2>
+                 <div class="work-value">
+                <h3>Partner, Not Just a Company</h3>
+                <p>Our role is to be more than just a corporation; we are here to be your partner. Throughout the process, we back your ideas and guide you towards the best course of action, ensuring you have the best branding experience.</p>
+            </div>
+            <div class="work-value">
+                <h3>Authentically Transparent</h3>
+                <p>Transparency is a core value we follow closely. We keep you informed about everything behind the scenes, from content metrics to reviews and future developments. We appreciate the same transparency from you!</p>
+            </div>
+            <div class="work-value">
+                <h3>Research Geeks</h3>
+                <p>We’re experts at researching! Our team spends ample time mastering the platforms we work on and is well-versed with their algorithms. Whatever you need, we’ll research our way through it to find the best solutions.</p>
             </div>
         </div>
-    </section>
-
-
+    </div>
+</section>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -212,11 +342,10 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>© 2024 The Brand Salt. All rights reserved. | <a href="https://calendly.com/d/cqk6-sjk-txt/the-brand-salt">Schedule a Call</a></p>
-        </div>
+        <p>© 2024 The Brand Salt. All rights reserved. | <a href="mailto:info@thebrandsalt.com">info@thebrandsalt.com</a></p>
     </footer>
 
 </body>
