@@ -30,6 +30,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex; /* Add flexbox for better responsiveness */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo and nav */
 }
 
 header h1.logo {
@@ -41,7 +44,7 @@ header h1.logo {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    /* Removed justify-content: space-around; */
 }
 
 nav ul li a {
@@ -272,5 +275,15 @@ footer a {
     .team-member,
     .work-value {
         flex-basis: 100%;
+    }
+
+    /* Header Responsive Adjustments */
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;  /* Center items horizontally */
+    }
+
+    nav ul li {
+        margin-bottom: 1rem; /* Add space between navigation items */
     }
 }
