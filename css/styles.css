@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
+    color: #56382d; /* Dark Brown Text Color */
+    background-color: #f8f3eb; /* Off-White Background */
     line-height: 1.6;
 }
 
@@ -25,7 +25,7 @@ a {
 
 /* Header */
 header {
-    background-color: #1d1e22;
+    background-color: #201315; /* Dark Brown Header Background */
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -34,8 +34,9 @@ header {
 
 .logo {
     font-size: 1.8rem;
-    color: #fff;
+    color: #f8f3eb; /* Off-White Logo Color */
     float: left;
+    font-weight: bold;
 }
 
 nav ul {
@@ -49,13 +50,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f3eb; /* Off-White Navigation Text */
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #e66d57; /* Orange Hover Color */
 }
 
 /* Hero Section */
@@ -65,7 +66,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #f8f3eb; /* Off-White Hero Text */
     text-align: center;
 }
 
@@ -82,8 +83,8 @@ nav ul li a:hover {
 }
 
 .hero-btn {
-    background-color: #ff6347;
-    color: #fff;
+    background-color: #e66d57; /* Orange Button Background */
+    color: #f8f3eb; /* Off-White Button Text */
     padding: 1rem 2rem;
     font-size: 1.2rem;
     border: none;
@@ -92,19 +93,20 @@ nav ul li a:hover {
 }
 
 .hero-btn:hover {
-    background-color: #ff4500;
+    background-color: #ff4500; /* Darker Orange Hover */
 }
 
 /* Services Section */
 .services-section {
     padding: 5rem 0;
-    background-color: #f7f7f7;
+    background-color: #f8f3eb; /* Off-White Section Background */
     text-align: center;
 }
 
 .services-section h2 {
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    color: #201315; /* Dark Brown Section Title */
 }
 
 .service-cards {
@@ -114,7 +116,7 @@ nav ul li a:hover {
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: #fff; /* White Card Background */
     padding: 2rem;
     width: 22%;
     margin-bottom: 2rem;
@@ -127,21 +129,24 @@ nav ul li a:hover {
     transform: translateY(-10px);
 }
 
-.service-card img {
-    width: 60px;
-    margin-bottom: 1.5rem;
-}
-
 .service-card h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    color: #201315; /* Dark Brown Card Title */
+}
+
+.service-card ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    color: #56382d; /* Dark Brown List Item Text */
 }
 
 /* Portfolio Section */
 .portfolio-section {
     padding: 5rem 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #fff; /* White Portfolio Background */
 }
 
 .portfolio-gallery {
@@ -168,8 +173,8 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent Overlay */
+    color: #f8f3eb; /* Off-White Overlay Text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +190,11 @@ nav ul li a:hover {
 .contact-section {
     padding: 5rem 0;
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #f8f3eb; /* Off-White Contact Section Background */
+}
+
+.contact-section h2 {
+    color: #201315; /* Dark Brown Contact Title */
 }
 
 .contact-section form {
@@ -200,26 +209,27 @@ nav ul li a:hover {
     margin-bottom: 1.5rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    color: #56382d; /* Dark Brown Form Input Text */
 }
 
 .contact-section button {
-    background-color: #ff6347;
-    color: #fff;
+    background-color: #e66d57; /* Orange Button Background */
+    color: #f8f3eb; /* Off-White Button Text */
     padding: 1rem;
     border: none;
     cursor: pointer;
 }
 
 .contact-section button:hover {
-    background-color: #ff4500;
+    background-color: #ff4500; /* Darker Orange Hover */
 }
 
 /* Footer */
 footer {
     padding: 2rem 0;
-    background-color: #1d1e22;
+    background-color: #201315; /* Dark Brown Footer Background */
     text-align: center;
-    color: #fff;
+    color: #f8f3eb; /* Off-White Footer Text */
 }
 
 /* About Us Section */
@@ -249,11 +259,11 @@ footer {
 .about-section .intro, .about-section .motto {
     font-weight: 600;
     font-size: 1.2rem;
-    color: #ff6347; /* Highlighted text color */
+    color: #e66d57; /* Highlighted text color */
 }
 
 .about-section .cta a {
-    color: #ff6347;
+    color: #e66d57;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
@@ -261,6 +271,73 @@ footer {
 
 .about-section .cta a:hover {
     color: #ff4500; /* Hover color effect */
+}
+
+/* Team Section */
+.team-section {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #fff; /* White Team Section Background */
+}
+
+.team-section h2 {
+    color: #201315; /* Dark Brown Team Title */
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.team-member {
+    width: 20%;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+    color: #201315; /* Dark Brown Team Member Name */
+}
+
+/* How We Work Section */
+.work-section {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #f8f3eb; /* Off-White Work Section Background */
+}
+
+.work-section h2 {
+    color: #201315; /* Dark Brown Work Title */
+}
+
+.work-values {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.work-value {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.work-value h3 {
+    color: #201315; /* Dark Brown Work Value Title */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.work-value p {
+    color: #56382d; /* Dark Brown Work Value Text */
 }
 
 /* Fade-in Animation */
