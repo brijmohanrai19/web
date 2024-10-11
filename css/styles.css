@@ -86,7 +86,7 @@ nav ul li a:hover {
 }
 
 .hero-btn:hover {
-    background-color: #56382d;
+    background-color: #e66d57; /* Updated hover color */
 }
 
 /* Services Section */
@@ -161,7 +161,7 @@ nav ul li a:hover {
 }
 
 .portfolio-item .overlay h3 {
-    color: #fff;
+    color: #f8f3eb; /* Off-white color */
     font-size: 1.5rem;
 }
 
@@ -241,7 +241,7 @@ nav ul li a:hover {
 }
 
 .contact-section form button:hover {
-    background-color: #56382d;
+    background-color: #e66d57; /* Updated hover color */
 }
 
 /* Footer */
@@ -255,4 +255,21 @@ footer {
 footer a {
     color: #f8f3eb;
     text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .service-cards,
+    .portfolio-gallery,
+    .team-members,
+    .work-values {
+        flex-direction: column;
+    }
+
+    .service-card,
+    .portfolio-item,
+    .team-member,
+    .work-value {
+        flex-basis: 100%;
+    }
 }
