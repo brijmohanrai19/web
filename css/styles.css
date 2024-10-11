@@ -222,17 +222,6 @@ footer {
     color: #fff;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* About Us Section */
 .about-section {
     padding: 5rem 0;
