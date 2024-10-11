@@ -57,7 +57,8 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: url('img/hero-bg.jpg') center/cover no-repeat;
+    background-color: #f8f3eb; /* Light shade color for now */
+    /*background: url('img/hero-bg.jpg') center/cover no-repeat;  */ /* Keep the tag for the future hero image */
     height: 100vh;
     display: flex;
     justify-content: center;
