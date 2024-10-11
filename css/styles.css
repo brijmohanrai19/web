@@ -29,325 +29,230 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
-.logo {
-    font-size: 1.8rem;
-    color: #f8f3eb; /* Off-White Logo Color */
-    float: left;
-    font-weight: bold;
+header h1.logo {
+    color: #f8f3eb; /* Off-White Text Color */
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    margin-left: 2rem;
+    justify-content: space-around;
 }
 
 nav ul li a {
-    color: #f8f3eb; /* Off-White Navigation Text */
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+    color: #f8f3eb;
+    padding: 0.5rem 1rem;
 }
 
 nav ul li a:hover {
-    color: #e66d57; /* Orange Hover Color */
+    background-color: #f8f3eb;
+    color: #201315;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-background.jpg') no-repeat center center/cover;
+    background: url('img/hero-bg.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f8f3eb; /* Off-White Hero Text */
     text-align: center;
+    color: #f8f3eb;
 }
 
 .hero-content h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    animation: fadeIn 1.5s ease-in;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
-    animation: fadeIn 2s ease-in;
 }
 
 .hero-btn {
-    background-color: #e66d57; /* Orange Button Background */
-    color: #f8f3eb; /* Off-White Button Text */
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    background-color: #201315;
+    color: #f8f3eb;
     border: none;
-    cursor: pointer;
-    animation: fadeIn 2.5s ease-in;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 .hero-btn:hover {
-    background-color: #ff4500; /* Darker Orange Hover */
+    background-color: #56382d;
 }
 
 /* Services Section */
 .services-section {
-    padding: 5rem 0;
-    background-color: #f8f3eb; /* Off-White Section Background */
-    text-align: center;
-}
-
-.services-section h2 {
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    color: #201315; /* Dark Brown Section Title */
+    padding: 4rem 0;
 }
 
 .service-cards {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .service-card {
-    background-color: #fff; /* White Card Background */
+    flex-basis: 30%;
+    background-color: #fff;
     padding: 2rem;
-    width: 22%;
-    margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-card h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #201315; /* Dark Brown Card Title */
 }
 
 .service-card ul {
     list-style: disc;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-    color: #56382d; /* Dark Brown List Item Text */
+    padding-left: 1.5rem;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
 }
 
 /* Portfolio Section */
 .portfolio-section {
-    padding: 5rem 0;
-    text-align: center;
-    background-color: #fff; /* White Portfolio Background */
+    padding: 4rem 0;
 }
 
 .portfolio-gallery {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .portfolio-item {
+    flex-basis: 30%;
     position: relative;
-    width: 30%;
-    margin-bottom: 2rem;
 }
 
 .portfolio-item img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent Overlay */
-    color: #f8f3eb; /* Off-White Overlay Text */
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s;
 }
 
 .portfolio-item:hover .overlay {
     opacity: 1;
 }
 
-/* Contact Section */
-.contact-section {
-    padding: 5rem 0;
-    text-align: center;
-    background-color: #f8f3eb; /* Off-White Contact Section Background */
-}
-
-.contact-section h2 {
-    color: #201315; /* Dark Brown Contact Title */
-}
-
-.contact-section form {
-    width: 50%;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-section input, .contact-section textarea {
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    color: #56382d; /* Dark Brown Form Input Text */
-}
-
-.contact-section button {
-    background-color: #e66d57; /* Orange Button Background */
-    color: #f8f3eb; /* Off-White Button Text */
-    padding: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-section button:hover {
-    background-color: #ff4500; /* Darker Orange Hover */
-}
-
-/* Footer */
-footer {
-    padding: 2rem 0;
-    background-color: #201315; /* Dark Brown Footer Background */
-    text-align: center;
-    color: #f8f3eb; /* Off-White Footer Text */
-}
-
-/* About Us Section */
-.about-section {
-    padding: 5rem 0;
-    background-color: #fff5ee; /* Soft, warm background color */
-    text-align: center;
-    animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
-}
-
-.about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-    font-weight: bold;
-    animation: fadeIn 0.6s ease-in-out;
-}
-
-.about-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 1.5rem;
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-.about-section .intro, .about-section .motto {
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #e66d57; /* Highlighted text color */
-}
-
-.about-section .cta a {
-    color: #e66d57;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.about-section .cta a:hover {
-    color: #ff4500; /* Hover color effect */
+.portfolio-item .overlay h3 {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 /* Team Section */
 .team-section {
-    padding: 5rem 0;
-    text-align: center;
-    background-color: #fff; /* White Team Section Background */
-}
-
-.team-section h2 {
-    color: #201315; /* Dark Brown Team Title */
+    background-color: #f9f9f9;
+    padding: 4rem 0;
 }
 
 .team-members {
     display: flex;
+    gap: 1.5rem;
     justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 3rem;
 }
 
 .team-member {
-    width: 20%;
-    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .team-member img {
-    width: 100%;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .team-member h3 {
-    margin-top: 1rem;
-    color: #201315; /* Dark Brown Team Member Name */
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
-/* How We Work Section */
+/* Work Section */
 .work-section {
-    padding: 5rem 0;
-    text-align: center;
-    background-color: #f8f3eb; /* Off-White Work Section Background */
-}
-
-.work-section h2 {
-    color: #201315; /* Dark Brown Work Title */
-}
-
-.work-values {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 3rem;
+    background-color: #ffffff;
+    padding: 4rem 0;
 }
 
 .work-value {
-    width: 30%;
-    margin-bottom: 2rem;
+    flex-basis: 30%;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.work-value h3 {
-    color: #201315; /* Dark Brown Work Value Title */
-    font-weight: bold;
-    margin-bottom: 1rem;
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
 }
 
-.work-value p {
-    color: #56382d; /* Dark Brown Work Value Text */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.contact-section form input,
+.contact-section form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-section form textarea {
+    height: 150px;
+}
+
+.contact-section form button {
+    padding: 0.8rem;
+    background-color: #201315;
+    color: #f8f3eb;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-section form button:hover {
+    background-color: #56382d;
+}
+
+/* Footer */
+footer {
+    background-color: #201315;
+    color: #f8f3eb;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #f8f3eb;
+    text-decoration: underline;
 }
