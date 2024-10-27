@@ -21,30 +21,31 @@ a {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Header */
 header {
     background-color: #201315; /* Dark Brown Header Background */
-    padding: 1rem 0;
+    padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 1000;
-    display: flex; /* Add flexbox for better responsiveness */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between logo and nav */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1.logo {
     color: #f8f3eb; /* Off-White Text Color */
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    /* Removed justify-content: space-around; */
+    gap: 1rem;
 }
 
 nav ul li a {
@@ -60,18 +61,18 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero-section {
-    background-color: #f8f3eb; /* Light shade color for now */
-    /*background: url('img/hero-bg.jpg') center/cover no-repeat;  */ /* Keep the tag for the future hero image */
+    background-color: #f8f3eb; /* Light background for now */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 1rem;
     color: #56382d;
 }
 
 .hero-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -90,7 +91,7 @@ nav ul li a:hover {
 }
 
 .hero-btn:hover {
-    background-color: #e66d57; /* Updated hover color */
+    background-color: #e66d57;
 }
 
 /* Services Section */
@@ -102,10 +103,11 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .service-card {
-    flex-basis: 30%;
+    flex: 1 1 300px;
     background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -113,7 +115,7 @@ nav ul li a:hover {
 }
 
 .service-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
@@ -134,10 +136,12 @@ nav ul li a:hover {
 .portfolio-gallery {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio-item {
-    flex-basis: 30%;
+    flex: 1 1 300px;
     position: relative;
 }
 
@@ -158,6 +162,7 @@ nav ul li a:hover {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
+    border-radius: 8px;
 }
 
 .portfolio-item:hover .overlay {
@@ -178,7 +183,8 @@ nav ul li a:hover {
 .team-members {
     display: flex;
     gap: 1.5rem;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team-member {
@@ -204,12 +210,13 @@ nav ul li a:hover {
 }
 
 .work-value {
-    flex-basis: 30%;
+    flex: 1 1 300px;
     background-color: #f4f4f4;
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
 }
 
 /* Contact Section */
@@ -245,7 +252,7 @@ nav ul li a:hover {
 }
 
 .contact-section form button:hover {
-    background-color: #e66d57; /* Updated hover color */
+    background-color: #e66d57;
 }
 
 /* Footer */
@@ -263,27 +270,51 @@ footer a {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .service-cards,
-    .portfolio-gallery,
-    .team-members,
-    .work-values {
+    header {
         flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
     }
 
     .service-card,
     .portfolio-item,
     .team-member,
     .work-value {
-        flex-basis: 100%;
+        flex: 1 1 100%;
     }
 
-    /* Header Responsive Adjustments */
+    .service-cards, .portfolio-gallery, .team-members {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        align-items: center;  /* Center items horizontally */
+        gap: 0.2rem;
     }
 
-    nav ul li {
-        margin-bottom: 1rem; /* Add space between navigation items */
+    header h1.logo {
+        font-size: 1.5rem;
     }
 }
