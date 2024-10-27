@@ -25,40 +25,63 @@ a {
 }
 
 /* Header */
+/* General Header Styles */
 header {
-    background-color: #201315; /* Dark Brown Header Background */
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header h1.logo {
-    color: #f8f3eb; /* Off-White Text Color */
-    font-size: 1.8rem;
+header .logo {
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
-nav ul {
-    list-style: none;
+header nav ul {
     display: flex;
     gap: 1rem;
+    list-style: none;
 }
 
-nav ul li a {
-    color: #f8f3eb;
-    padding: 0.5rem 1rem;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5rem;
 }
 
-nav ul li a:hover {
-    background-color: #f8f3eb;
-    color: #201315;
-    border-radius: 5px;
-}
+/* Mobile View: Hide Navigation and Add Hamburger Menu */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide navigation links */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
 
+    header .menu-toggle {
+        display: inline-block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    /* Show menu on click */
+    .show-menu nav ul {
+        display: flex;
+    }
+}
 /* Hero Section */
 .hero-section {
     background-color: #f8f3eb; /* Light background for now */
