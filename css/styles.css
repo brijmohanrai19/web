@@ -86,7 +86,7 @@ header nav ul li a {
 /* Hero Section with Background Image */
 .hero-section {
     position: relative;
-    background: url('img/hero-background.jpg') no-repeat center center/cover; /* Update with the correct path */
+    background: url('img/0_2.jpeg.jpg') no-repeat center center/cover; /* Update with the correct path */
     color: #fff;
     text-align: center;
     padding: 100px 20px;
